@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 .contact-section h2 {
@@ -25,11 +26,21 @@ body {
     margin: 0;
 }
 
+.contact-phone {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-address {
+    color: inherit;
+    text-decoration: none;
+}
+
 .contact-element {
     padding: 5px;
     display: flex;
     align-items: center;
-    text-align: left;
+    text-align: start;  
     word-wrap: break-word;
     gap: 20px;
     width: 275px;
@@ -60,12 +71,26 @@ body {
     gap: 20px;
 }
 
+.vision-h1 {
+    display: flex;
+    width: 100vw;
+    max-width: 600px;
+    margin: auto;
+}
+
 .vision-element {
     background-color: rgb(17, 35, 45);
     border-radius: 15px;
     width: 186.67px;
     height: 300px;
     padding: 5px 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /*box-shadow: 2px 2px 4px rgba(0,0,0,0.8);*/
+}
+
+.vision-element:hover {
+    transform: translateY(-4px);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .vision-element p {
@@ -85,10 +110,22 @@ body {
     color: rgb(17, 35, 45);
 }
 
+footer {
+    display: flex;
+    width: 100vw;
+    max-width: 600px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/*------------ MOBILE VIEW ------------*/
+
 @media (max-width: 600px) {
     .vision-section {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: 100vw;
         max-width: 600px;
         margin: auto;
@@ -101,6 +138,17 @@ body {
         width: 400px;
         height: 300px;
         padding: 5px 5px;
+        margin: auto;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        max-width: 600px;
+        align-items: center;
+        justify-content: space-between;
         margin: auto;
     }
 }
