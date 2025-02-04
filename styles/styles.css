@@ -73,6 +73,16 @@ body {
     padding: 0px 10px;
 }
 
+.description-h1 {
+    display: flex;
+    width: 100vw;
+    max-width: 600px;
+    justify-content: center;
+    margin: auto;
+    padding-top: 4px;
+    padding-bottom: 20px;
+}
+
 .description-element p {
     font-size: 16px;
 }
